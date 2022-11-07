@@ -49,9 +49,9 @@ class KiCadToJLCForm(wx.Frame):
 # Plugin definition
 class Plugin(pcbnew.ActionPlugin):
     def __init__(self):
-        self.name = "Fabrication Toolkit"
+        self.name = "Fabrication Tool"
         self.category = "Manufacturing"
-        self.description = "Toolkit for automating PCB fabrication process with KiCad and JLC PCB"
+        self.description = "Tool for automating PCB fabrication process with KiCad and JLC PCB"
         self.pcbnew_icon_support = hasattr(self, "show_toolbar_button")
         self.show_toolbar_button = True
         self.icon_file_name = os.path.join(os.path.dirname(__file__), 'icon.png')

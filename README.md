@@ -1,9 +1,5 @@
-<img src="https://github.com/bennymeg/JLC-Plugin-for-KiCad/blob/master/assets/logo.svg?raw=true" 
-    style="display:block margin-left: auto; margin-right: auto;" alt="JLC PCB Plug-in for KiCad">
-    
-<div align="center">
 
-| **JLC PCB Plug-in for KiCad** |
+| **KiCad fabrication tool** |
 |:-----:|
 
 </div>
@@ -17,20 +13,20 @@
 ## Installation
 
 ### Official Installation
-Open the "Plugin and Content Manager" from the KiCad main menu and install the "<ins>Fabrication Toolkit</ins>" plugin from the selection list.
+Open the "Plugin and Content Manager" from the KiCad main menu and install the "<ins>Fabrication Tool</ins>" plugin from the selection list.
 
 ### Manual installation
-Download the latest ZIP file from https://github.com/bennymeg/JLC-Plugin-for-KiCad. Open the "Plugin and Content Manager" from the KiCads main window and install the ZIP file via "Install from File".
+Download the latest ZIP file from https://github.com/bookshiyi/kicad_fab_tool. Open the "Plugin and Content Manager" from the KiCads main window and install the ZIP file via "Install from File".
 
 ## Usage
-Click on the Fabrication Toolkit <img src="https://github.com/bennymeg/JLC-Plugin-for-KiCad/blob/master/resources/icon.png?raw=true" style="magin-bottom: 8px;" alt="Logo" height=24> button on the top tool box inside KiCad pcb editor (pcbnew).
+Click on the Fabrication Tool ![logo](./plugins/icon.png) button on the top tool box inside KiCad pcb editor (pcbnew).
 
 ## Options
 
 ### Include Component Part Number in Production Files
 Add an 'LCSC Part #'* field with the LCSC component part number to the symbol's fields property.
 
-<img src="https://github.com/bennymeg/JLC-Plugin-for-KiCad/blob/master/assets/mpn.png?raw=true" height=420>
+![mpn](./assets/mpn.png) 
 
 #### Primary Fields*:
 | 'LCSC Part #' | 'JLCPCB Part #' |
@@ -47,21 +43,21 @@ _The fields will be query in the order denoted above._
 ### Ignore Footprint in Production Files
 Select 'Exclude from board' or 'Exclude from BOM' in the symbol's attributes property in order to ignore the footprint from the relevant file.
 
-<img src="https://github.com/bennymeg/JLC-Plugin-for-KiCad/blob/master/assets/attributes.png?raw=true" height=420>
+![attributes](./assets/attributes.png) 
 
 Select 'Exclude from position files' or 'Exclude from BOM' in the footprint's fabrication attributes property in order to ignore the footprint from the relevant file.
 
-<img src="https://github.com/bennymeg/JLC-Plugin-for-KiCad/blob/master/assets/fabrication.png?raw=true" height=505>
+![fabrication](./assets/fabrication.png) 
 
 ### Rotate a Component
 The rotation of components in KiCad Footprints does not always match the orientation in the JLC library.
 Add an 'JLC Rotation Offset' field with an counter-clockwise orientation offset in degrees to correct this.
 
-<img src="https://github.com/bennymeg/JLC-Plugin-for-KiCad/blob/master/assets/rotation-jlc.png?raw=true" height=164>
+![rotation-jlc](./assets/rotation-jlc.png) 
 
 If the JLC preview shows a footprint like this, enter a rotation offset of -90 to rotate pin 1 to the lower right corner.
 
-<img src="https://github.com/bennymeg/JLC-Plugin-for-KiCad/blob/master/assets/rotation.png?raw=true" height=505>
+![rotation](./assets/rotation.png) 
 
 #### Primary Fields*:
 | 'JLCPCB Rotation Offset' |
@@ -75,6 +71,6 @@ _The fields will be queried in the order denoted above._
 
 _The fields will be queried in the order denoted above._
 
-## Author
+## Thanks
 
-Benny Megidish
+[Benny Megidish](https://github.com/bennymeg/)

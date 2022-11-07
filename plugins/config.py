@@ -2,12 +2,15 @@ import pcbnew
 
 baseUrl = 'https://www.jlcpcb.com'
 
-netlistFileName = 'netlist.ipc'
-designatorsFileName = 'designators.csv'
-placementFileName = 'positions.csv'
-bomFileName = 'bom.csv'
-gerberArchiveName = 'gerber.zip'
-outputFolder = 'production'
+# projectName = 
+dateTime = time.strftime("%y%m%d", time.localtime())
+netlistFileName = 'netlist_'+dateTime+'.ipc'
+designatorsFileName = 'designators_'+dateTime+'.csv'
+placementFileName = 'pos_'+dateTime+'.csv'
+bomFileName = 'bom_'+dateTime+'.csv'
+gerberFileName = 'gbr_'+dateTime+'.zip'
+gerberArchiveName = 'archive_'+dateTime+'.zip'
+outputFolder = 'release'
 
 plotPlan = [
     ("F.Cu", pcbnew.F_Cu, "Top Layer"),
